@@ -11,6 +11,10 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
+ if (item) {
+   item = {itemName: item, itemPrice: Math.random(100)}
+ }
+ return `${item} has been added to your cart.`
 }
 
 function viewCart() {
